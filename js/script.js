@@ -44,6 +44,13 @@ const delCheckedBtn = () => {
 
 const selectAllBtn = () => {
     const checkBoxes = document.querySelectorAll('input[type="checkbox"]');
+
+    if(checkBoxes.length === 0)
+        {
+            alert("You Haven't Added Anything !! Add Items to the List at First !!!");
+            return;
+        }
+
     checkBoxes.forEach(checkBox => {
         checkBox.checked = true;
     });
