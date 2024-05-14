@@ -27,12 +27,26 @@ const delCheckedBtn = () => {
     const checkBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
     // console.log(checkBoxes); // returns as NodeList array
 
+    // if there are no checkboxes selected for deletion:
+    if(checkBoxes.length === 0)
+    {
+        alert("Please select at least one checkbox to delete");
+        return;
+    }
+
     // to separate each items, we are using forEach loop here:
     checkBoxes.forEach(checkBox => {
         // console.log(checkBox.parentNode);    // li is checkBox's parent node
         const li = checkBox.parentNode;
         li.parentNode.removeChild(li);
-    })
+    });
+};
+
+const selectAllBtn = () => {
+    const checkBoxes = document.querySelectorAll('input[type="checkbox"]');
+    checkBoxes.forEach(checkBox => {
+        checkBox.checked = true;
+    });
 };
 
 
