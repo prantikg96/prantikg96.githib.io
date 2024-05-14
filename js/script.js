@@ -30,7 +30,7 @@ const delCheckedBtn = () => {
     // if there are no checkboxes selected for deletion:
     if(checkBoxes.length === 0)
     {
-        alert("Please select at least one checkbox to delete");
+        alert("Please Select At Least 1 Item To Delete !!");
         return;
     }
 
