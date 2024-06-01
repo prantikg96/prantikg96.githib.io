@@ -27,6 +27,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 2s;
+}
+
+.container:hover{
+    box-shadow: 0 0 10px 15px rgba(250, 250, 90, 0.356);
 }
 
 h1{
@@ -122,6 +127,11 @@ li button:hover{
     .container{
         width: 60%;
         max-width: 800px;
+        transition: 2s;
+    }
+
+    .container:hover{
+    box-shadow: 0 0 10px 15px rgba(250, 250, 90, 0.356);
     }
 
     button{
