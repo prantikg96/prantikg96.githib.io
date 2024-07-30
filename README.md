@@ -1,3 +1,5 @@
-# Dynamic To-Do List
+# DOM Mini Project - 5
 
-## Src is currently wip
+``` bash
+Dynamic To-Do List
+```
